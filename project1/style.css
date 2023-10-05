@@ -1,6 +1,7 @@
 h1 {
     color: red; /* цвет текста */
     text-align: center; /* выравнивание текста */
+    font-size: 50px; /* размер шрифта */
 }
 div {
     background-color: cornflowerblue; /* цвет фона */
@@ -15,17 +16,23 @@ div {
 }
 h2 {
     text-align: center;
+    font-size: 36px;
 }
 p {
     color: rgb(12, 53, 167);
-    border: 1px solid black;
+    font-size: 24px;
 }
 img {
-    width: 500px; /* ширина */
+    display: block; /* картинке задают блочные параметры */
+    margin: auto; /* автоматический отступ справа и слева */
+    width: 50%; /* ширина */
     margin-top: 30px;
     margin-bottom: 25px;
 }
 /* 
+    Задача. 1. задать размер заголовков статей 36px
+            2. задать размер текстов статей 24px
+
     Задача. 1. сделать отступ между заголовком статьи и картинкой в размере 30px.
             2. сделать отступ между картинкой и текстом статьи в размере 25px.
 
