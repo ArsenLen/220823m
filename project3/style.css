@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* пэддинги и бордеры не добавляют доп. пространство, а забирают у блока */
+}
+main {
+    display: flex;
+    justify-content: center; /* позиционировать элементы по горизонтали */
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: seagreen;
+    padding: 20px; /* внутренний отступ со всех сторон */
+    margin: 10px;
+}
+
+/*
+    flex - по умолчанию позволяет разместить элементы в строку.
+        flex задаем в родительский элемент блоков, которые мы хотим разместить в строку
+
+    ДЗ. 
+        1. Создать папку images в project3 и поместить туда картинки (img-1, img-2 .. img-8)
+        2. Пройти первые 4 уровня https://flexboxfroggy.com/#ru
+        3. Выполнить задачу по ссылке https://docs.google.com/document/d/1QjmspqtLhjukJdLpx0IIrkUTLt4F-2CNB4LoukpaNjc/edit
+
+    margin/padding
+
+    margin: 10px; - 10px со всех сторон
+    margin: 10px 20px;     10px - сверху и снизу, 20px - справа и слева
+    margin: 10px auto 20px;       10px - сверху, auto - справа и слева, 20px - снизу
+    margin: 10px 20px 30px 0;      по часовой стрелке сверху->справа->снизу->слева
+
+    margin-top: 10px
+    margin-right: 20px
+    margin-bottom: 30px
+    margin-left: 40px
+
+    * - селектор для выбора всех элементов в html
+
+    ctrl + shift + R - обновить страницу с кэшем
+*/
