@@ -13,12 +13,25 @@ table {
 td, th {
     border: 1px solid black; /* граница */
 }
-tr:nth-child(odd) {
+tr:nth-child(even) {
     background-color: khaki; /* цвет фона */
 }
 /* 
     вложенность стилей
-        .countries tr:nth-child(3) - только 3 tr, который находится внутри 
+
+    <table class="countries">
+    <tr>
+    <tr>
+    <tr>
+    </table>
+ 
+    <table>
+    <tr>
+    <tr>
+    <tr>
+    </table>
+
+        .countries tr  - только 3 tr, который находится внутри 
             элемента с классом countries 
 
     Псевдоклассы:
