@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    background-color: #EEEFF1;
+    padding: 100px 0; /* 100px - сверху и снизу, 0 - справа и слева */
+}
+h1 {
+    font-size: 32px;
+    text-align: center;
+}
+p {
+    width: 30%;
+    color: #727272;
+    text-align: center;
+    margin: 50px auto 65px; /* 50px - сверху, auto - справа/слева, 65px - снизу */
+}
+form {
+    width: 30%;
+    display: flex;
+    flex-direction: column; /* разместить элементы в колонку */
+    margin: auto;
+}
+
+/*
+    flex-direction - меняет направление flex элементов.
+        по умолчанию row - все элементы в одну строку
+        column - элементы выстраиваются в колонку, при этом justify-content и align-items
+            меняются. 
+*/

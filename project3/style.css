@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box; /* пэддинги и бордеры не добавляют доп. пространство, а забирают у блока */
 }
+header {
+    /* height: 70px; */
+    background-color: rgba(241, 241, 241, 0.851);
+    padding: 20px 0; /* 30px - сверху и снизу. 0 - справа и слева */ 
+    margin-bottom: 30px;
+}
+h1 {
+    text-align: center; /* центрирование текста */
+    font-family: 'Ubuntu', sans-serif; /* задаем подключенный шрифт */
+}
 main {
     width: 90%;
     margin: auto;
@@ -16,6 +26,13 @@ div {
     /* background-color: seagreen; */
     padding: 20px; /* внутренний отступ со всех сторон */
     margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    transition: 2s; /* плавный анимированный переход */
+}
+div:hover {
+    transform: scale(1.05) rotate(10deg);
+    box-shadow: 15px 9px 19px 9px rgba(141, 106, 51, 0.2);
 }
 .item-1 {
     background-image: url(./images/img1.jpg);
@@ -23,8 +40,29 @@ div {
     background-repeat: no-repeat; /* не повторять картинку, если ее размер меньше, чем блок */
     background-position: center; /* разместит по центру по вертикали и горизонтали */
 }
+.item-2 {
+    background-image: url(./images/img2.jpg); 
+}
+.item-3 {
+    background-image: url(./images/img2.jpg);
+}
+
 
 /*
+    
+    box-shadow - тень для элемента
+
+    transform позволяет увеличить, повернуть, масштабировать, наклонять
+    scale(N) - масштабирует элемент. N - коэффицент масштабирования. >1 - увеличть, <1 - уменьшит
+    rotate(Ndeg) - поворачиваем картинку, Ndeg - угол поворота. deg - degree - градус  
+
+    Псевдоклассы - особое состояние элемента 
+        :nth-child() - элемент по порядку
+        :hover - состояние элемента при наведении на него
+
+    1. img - добавление картинки в html
+    2. background image - добавление картинки фона
+
     https://flexboxfroggy.com/#ru 
     1. Пройти уровни с 5 по 13
     2. Закончить добавлять картинки в блоки, подогонать под размеры
