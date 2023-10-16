@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none; /* отменяем нижнее подчеркивание у ссылок */
+}
+header {
+    background-color: #1ABC9C;
+    padding: 15px 0; /* отступы сверху/снизу */
+}
+.wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list {
+    list-style: none; /* сброс маркера у элементов списка */
+    display: flex;
+}
+li:not(:last-child) {
+    margin-right: 20px;
+}
+.nav-link {
+    font-size: 25px;
+    color: black;
+}
+.social-link:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* 
+    header li:not(:last-child), header a:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    Задача. добавить отступы между картинками социальных иконок
+
+    h1
+    font-size 32-36px;
+    font-weight: 600;
+
+    p, a, div
+    font-size: 16px
+    font-weight: 400
+    font-style: normal
+    line-height: normal    
+
+
+    :first-child - первый дочерний элемент
+    :last-child - последний дочерний элемент
+
+    :not() - отрицание, инверсия
+
+    Задача. Позиционировать блоки в header в одну строку равноудаленно друг от друга
+
+    list-style: 
+        a) list-style-type - тип маркера
+        б) list-style-pos - 
+        в) list-style-image -
+
+        background: red;
+
+        background:
+         a) background-image
+         б) background-size
+         в) background-position
+         г) background-repeat
+
+         background:  url("./img1.jpg") cover center no-repeat;
+*/
