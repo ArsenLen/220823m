@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    font-family: 'Inter', sans-serif;
+}
 a {
     text-decoration: none; /* отменяем нижнее подчеркивание у ссылок */
 }
@@ -53,8 +56,41 @@ h1 {
     font-size: 20px;
     text-align: justify;
 }
+/* наши проекты */
+.projects {
+    background-color: #DCFFEB;
+    padding: 125px 0; /* 125px - сверху/снизу, 0 - справа/слева */
+}
+.projects-wrapper {
+    width: 90%;
+    margin: auto;
+}
+.projects-list {
+    display: flex;
+    gap: 40px; /* отступы между элементами */
+}
+.project {
+    width: 33%; /* calc(33% - 80 / 3) */
+    aspect-ratio: 436/376; /* соотношение сторон */
+    background-image: url(./images/project.png);
+}
+/* 
+    .project:not(:last-child) {
+        margin-right: 40px;
+    }
+
+
+    gap - отступы между элементами внутри flexbox
+
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+*/
+
 
 /* 
+
+
     text-align: justify - выравнивание по ширине
 
     header li:not(:last-child), header a:not(:last-child) {
@@ -93,6 +129,7 @@ h1 {
          б) background-size
          в) background-position
          г) background-repeat
+         д) background-color
 
          background:  url("./img1.jpg") cover center no-repeat;
 */
