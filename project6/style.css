@@ -31,8 +31,32 @@ li:not(:last-child) {
 .social-link:not(:last-child) {
     margin-right: 20px;
 }
+/* about */
+.about {
+    display: flex;
+    align-items: center;
+}
+.about-img {
+    width: 50%;
+}
+.about-info {
+    width: 50%;
+}
+h1 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.about-descr {
+    padding: 0 65px;
+    font-size: 20px;
+    text-align: justify;
+}
 
 /* 
+    text-align: justify - выравнивание по ширине
+
     header li:not(:last-child), header a:not(:last-child) {
         margin-right: 20px;
     }
