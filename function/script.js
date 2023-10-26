@@ -51,13 +51,41 @@
 
 // Создать функцию, которая будет принимать цену продукта и процент скидки
 // а возвращать итоговую цену со скидкой
-function calcDiscount(price, sale) {
-    return price - (price * sale / 100)
-}
+// function calcDiscount(price, sale) {
+//     return price - (price * sale / 100)
+// }
 
-console.log(calcDiscount(5000, 50)) // Вызов функции подсчета скидки товара, который стоит 5000 со скидкой 50%
-console.log(calcDiscount(10000, 20))
+// console.log(calcDiscount(5000, 50)) // Вызов функции подсчета скидки товара, который стоит 5000 со скидкой 50%
+// console.log(calcDiscount(10000, 20))
 /*
     6000, 10
     return 6000 - (6000 * 10 / 100) = 5400
 */
+
+// Задача. Создать функцию, которая запрашивает число и выводит квадрат этого числа в консоль
+// function square() {
+//     const number = +prompt("Введите число")
+//     const square = number ** 2
+//     console.log(square)
+// }
+// square()
+/*
+    Math.pow(число, степень)
+*/
+
+// Задача. Создать функцию, которая получает в аргументы два числа
+// и выводит наибольшее в консоли. 
+// fnName(10, 15) // 15
+
+
+// Задача. Создать функцию, которая принимает текст уведомления и ее цвет.
+// В консоли отобразить <div></div>, в который передать цвет в style и текст внутри div
+function showNotification(text, color) {
+    console.log(`<div style="background-color: ${color}"> ${text} </div>`)
+}
+
+// Функционал авторизации пользователя
+showNotification("Вы успешно вошли в систему", "green")
+
+// Функционал добавления элемента в корзину
+showNotification("Вы успешно добавили продукт в корзину", "yellow")

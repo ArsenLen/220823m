@@ -9,8 +9,8 @@
 // myTitle.innerText = "Это мой заголовок"
 
 // Задача. поменять текст во всех тегах h1 на "Это мой заголовок"
-const titles = document.querySelectorAll("h1")
-// console.log(titles) // [{h1}, {h1}, {h1}]
+// const titles = document.querySelectorAll("h1")
+// console.log(titles) // [{h1}, {h1}, {h1}] - nodelist
 
 // for(let i = 0; i < titles.length; i++) {
 //     titles[i].innerText = "Это мой заголовок"
@@ -134,7 +134,28 @@ img.setAttribute("src", "../project3/images/img2.jpg") // меняю атриб�
     }
 */
 
-sum(10, 15)
-function sum(a, b) {
-    console.log(a + b)
-}
+// function declaration
+// sum(10, 15)
+// function sum(a, b) {
+//     console.log(a + b)
+// }
+
+// // function expression
+
+// const sum1 = function(a, b) {
+//     console.log(a + b)
+// }
+// sum1(10, 15)
+
+// // arrowFunction. ES6
+// const sum2 = (a, b) => console.log(a + b)
+
+// const greeting = name => console.log(`Привет ${name}`)
+
+// array.map(function(a) {
+//     console.log("hello")
+// })
+
+// array.map(a => console.log("hello"))
+
+
