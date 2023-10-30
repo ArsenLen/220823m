@@ -16,7 +16,8 @@
     append() принимает созданный с помощью createElement тег
 */
 
-// Задача. Создать тег p с текстом "hello world" в div.item
+// Зад
+// ача. Создать тег p с текстом "hello world" в div.item
 // const item = document.querySelector(".item") // нахожу div.item чтобы добавить туда p
 // const paragraph = document.createElement("p")
 // paragraph.innerText = "hello world"
@@ -172,7 +173,26 @@ for(let i = 0; i < products.length; i++) {
 
 
 
+/*
+    Методы. 
+    {} - тег/объект - querySelector("selector")
+    [{}, {}, {}] - nodelist - querySelectorAll("selector")
+    getAttribute("attrName"), setAttribute("attrName", "attrValue")
+    createElement("tagName") - создание элемента
+    element.append() - положить созданный элемент внутрь какого-либо тега
 
+
+    innerText,
+*/
+
+
+/*
+    const block = document.createElement("div")
+
+    const block = document.createElement("div")
+    block.classList.add("item")
+    block.classList.add("item")
+*/
 
 
 
