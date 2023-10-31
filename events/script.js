@@ -85,22 +85,22 @@
 */
 
 // При нажатии на кнопку "red", менять ее цвет на красный
-const buttonRed = document.querySelector(".red") // Ищем кнопку red по классу .red
-const buttonGreen = document.querySelector(".green") // Ищем кнопку green по классу .green
-const buttonBlue = document.querySelector(".blue") // Ищем кнопку blue по классу .blue
-const buttonYellow = document.querySelector(".yellow") // Ищем кнопку yellow по классу .yellow
-const square = document.querySelector(".item") // Ищем div по классу .item
+// const buttonRed = document.querySelector(".red") // Ищем кнопку red по классу .red
+// const buttonGreen = document.querySelector(".green") // Ищем кнопку green по классу .green
+// const buttonBlue = document.querySelector(".blue") // Ищем кнопку blue по классу .blue
+// const buttonYellow = document.querySelector(".yellow") // Ищем кнопку yellow по классу .yellow
+// const square = document.querySelector(".item") // Ищем div по классу .item
 
-const buttons = document.querySelectorAll("button") // [{}, {}, {}, {}]  nodeList
+// const buttons = document.querySelectorAll("button") // [{}, {}, {}, {}]  nodeList
 
-for(let i = 0; i < buttons.length; i++) {
-    // console.log(buttons[i])
-    buttons[i].addEventListener("click", function(event) {
-        // console.log(event)
-        // console.log(event.target.className) // конкретно та кнопка из четырех, на которую кликнули
-        square.style.backgroundColor = event.target.className
-    })
-}
+// for(let i = 0; i < buttons.length; i++) {
+//     // console.log(buttons[i])
+//     buttons[i].addEventListener("click", function(event) {
+//         // console.log(event)
+//         // console.log(event.target.className) // конкретно та кнопка из четырех, на которую кликнули
+//         square.style.backgroundColor = event.target.className
+//     })
+// }
 
 // buttonRed.addEventListener("click", function() {
 //     square.style.backgroundColor = "red"
@@ -189,3 +189,25 @@ for(let i = 0; i < buttons.length; i++) {
                     интерфейса отобразить в большом размере.
 
         */
+
+// const previewImages = document.querySelectorAll(".preview-images img") // Нахожу мелкие картинки
+// const fullImage = document.querySelector(".full-img") // Нахожу большую картинку
+
+
+// for(let i = 0; i < previewImages.length; i++) { // Прохожусь циклом по списку мелких картинок
+//     previewImages[i].addEventListener("click", function(event) { // Вешаю слушатель на каждую картинку
+//         const imageSource = event.target.getAttribute("src") // получаю путь к картинке, на которую кликнул
+//         fullImage.setAttribute("src", imageSource) // 
+//     })
+// }
+
+// const button = document.querySelector(".btn") // нахожу кнопку
+
+// button.addEventListener("click", function(event) {
+//     console.log(event)
+// })
+
+/*
+    event - объект события, который создается автоматически при совершении пользователем события
+    в браузере
+*/
