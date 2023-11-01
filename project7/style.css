@@ -1,7 +1,8 @@
-.item-1 {
+.item {
     background-color: khaki;
     padding: 50px;
     width: 350px;
+    margin: 10px;
 }
 p {
     font-size: 24px;
