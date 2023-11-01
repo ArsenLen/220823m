@@ -1,0 +1,11 @@
+.item-1 {
+    background-color: khaki;
+    padding: 50px;
+    width: 350px;
+}
+p {
+    font-size: 24px;
+}
+.hidden {
+    display: none; /* скрыть элемент из html */
+}

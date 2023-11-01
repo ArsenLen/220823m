@@ -32,13 +32,45 @@ todo.forEach(function(text) {
     `
 })
 
-const todoCards = document.querySelectorAll(".todo-item") // Нахожу все карточки
+// При втором нажатии на карточку, убирать у нее зеленый цвет и возвращать в начальное состояние
+const todoCards = document.querySelectorAll(".todo-item") // Нахожу все карточки [{}, {}, {}, {}]
 todoCards.forEach(function(todoCard) {
     todoCard.addEventListener("click", function(event) {
         // event.target.classList.add("active")
-        todoCard.classList.add("active") // 
+        todoCard.classList.toggle("active") // переключаем класс active 
+    })
+    // любое действие здесь будет выполнено 4 раза
+    
+})
+
+// При нажатии на кнопку "Выбрать все", добавлять класс active для всех карточек.
+/*
+    1. При нажатии на кнопку "Выбрать все", в консоли отображать Hello
+    2. Отобразить в консоли каждую карточку из массива todoCards
+*/
+const allBtn = document.querySelector(".all-btn") // Нахожу кнопку "Выбрать все"
+allBtn.addEventListener("click", function() {
+    todoCards.forEach(function(todoCard) {
+        todoCard.classList.add("active")
     })
 })
+
+// При нажатии на кнопку "отменить все", убирать класс active для всех карточек
+const allReset = document.querySelector(".all-reset") // Нахожу кнопку "убрать все"
+allReset.addEventListener("click", function() { // вешаю слушатель клика на кнопку "убрать все"
+    todoCards.forEach(function(todoCard) { // прохожусь по всем карточкам 
+        todoCard.classList.remove("active") // убираю класс active у всех карточек
+    })
+})
+
+/*
+    todoCards = [{}, {}, {}, {}]
+        {} - карточка - <div class="todo-item"><h5>Название<h5></div>
+
+    numbers = [10, 12, 15, 20, 50]
+*/
+
+
 
 
 
