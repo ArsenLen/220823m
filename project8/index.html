@@ -12,22 +12,23 @@
 <body>
     <section class="form">
         <form class="product-form">
-            <input type="text" class="product-name" placeholder="Назвавние" required>
+            <input type="text" class="product-name" placeholder="Название" required>
             <input type="number" class="product-price" placeholder="Цена" required>
             <input type="submit" value="Добавить">
         </form>
     </section>
 
-    <section class="products">
-        <div class="product-card">
-            <h5 class="product-card-name">${product.name}</h5>
-            <p class="product-card-price">${product.price}</p>
-        </div>
-        <div class="product-card">
-            <h5 class="product-card-name">${product.name}</h5>
-            <p class="product-card-price">${product.price}</p>
-        </div>
+    <section class="search-container">
+        <input type="text" class="search" placeholder="Название">
     </section>
+
+    <section class="products">
+        
+    </section>
+
+    <div class="notification">
+        <h3 class="notification-text">Hello</h3>
+    </div>
     
     <script src="./script.js"></script>
 </body>
