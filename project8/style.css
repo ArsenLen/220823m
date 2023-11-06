@@ -91,6 +91,10 @@ input[type="submit"] {
 .search {
     width: 100%;
 }
+
+.active {
+    transform: scale(1.05);
+}
 /*
     селектор по атрибуту
     <input type="submit">

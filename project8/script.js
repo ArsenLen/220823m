@@ -98,6 +98,11 @@ function deleteProduct() {
     })
 }
 
+const div = document.querySelector("div")
+
+const currentWidth = div.style.width
+div.style.width = currentWidth + `${20}px`
+
 // const searchInput = document.querySelector(".search")
 
 // searchInput.addEventListener("input", function(event) {
